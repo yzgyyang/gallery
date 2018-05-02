@@ -1261,7 +1261,8 @@
 
 		}
 
-		@media screen and (max-width: 736px) {
+		/* This limits the screen width if details of the modal will be displayed on phones. (default: 736px) */
+		@media screen and (max-width: 300px) {
 
 			.poptrox-popup:before {
 				display: none;
