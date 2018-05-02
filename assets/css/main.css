@@ -1262,13 +1262,14 @@
 		}
 
 		/* This limits the screen width if details of the modal will be displayed on phones. (default: 736px) */
-		@media screen and (max-width: 300px) {
+		/* Use class="hideonphone" so that the contents won't be desplayed */
+		@media screen and (max-width: 736px) {
 
 			.poptrox-popup:before {
 				display: none;
 			}
 
-			.poptrox-popup .caption {
+			.poptrox-popup .caption .hideonphone{
 				display: none !important;
 			}
 
